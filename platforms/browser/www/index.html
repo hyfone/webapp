@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+         WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323
+        <meta name="viewport" content="user-scalable=no, initial-scale=0.5, maximum-scale=0.5, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <!--<link rel="stylesheet" type="text/css" href="css/index.css" />-->
+        <!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+        <!--<meta name="viewport" content="width=device-width, initial-scale=0.5,maximum-scale=0.5">-->
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/amazeui.css" />
+        <script type="text/javascript" src="js/amazeui.js"></script>
+        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    </head>
+    <body>
+    <div class="head">
+        <div class="am-g">
+            <div class="am-u-sm-2">
+                <div class="logo">
+                    <img src="img/logo.png">
+                </div>
+            </div>
+            <div class="am-u-sm-9">
+                <div class="search">
+                    <div class="am-g">
+                        <div class="am-u-sm-2">
+                            <img src="img/search_logo.png" class="search_logo">
+                        </div>
+                        <div class="am-u-sm-10">
+                            <input type="text" value="搜索你想找的商品" onFocus="if(value==defaultValue){value='';}" onBlur="if(!value){value=defaultValue;}"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="am-u-sm-1">
+                <div class="classification">
+                    <img src="img/classification_icon.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="am-slider am-slider-default" data-am-flexslider id="demo-slider-0">
+            <ul class="am-slides">
+                <li><img src="http://s.amazeui.org/media/i/demos/bing-1.jpg" /></li>
+                <li><img src="http://s.amazeui.org/media/i/demos/bing-2.jpg" /></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="part">
+            <div class="part_name">
+                <img src="img/category.jpg">
+            </div>
+            <div class="am-g">
+                <div class="am-u-sm-3">
+                    <div class="category">
+                        <div class="category_img">
+                            <img src="img/category1.jpg">
+                        </div>
+                        <p>主粮</p>
+                    </div>
+                </div>
+                <div class="am-u-sm-3">
+                    <div class="category">
+                        <div class="category_img">
+                            <img src="img/category2.jpg">
+                        </div>
+                        <p>零食</p>
+                    </div>
+                </div>
+                <div class="am-u-sm-3">
+                    <div class="category">
+                        <div class="category_img">
+                            <img src="img/category3.jpg">
+                        </div>
+                        <p>玩具</p>
+                    </div>
+                </div>
+                <div class="am-u-sm-3">
+                    <div class="category">
+                        <div class="category_img">
+                            <img src="img/category4.jpg">
+                        </div>
+                        <p>日用</p>
+                    </div>
+                </div>
+            </div>
+            <div class="am-g">
+                <div class="am-u-sm-3">
+                    <div class="category">
+                        <div class="category_img">
+                            <img src="img/category5.jpg">
+                        </div>
+                        <p>医疗</p>
+                    </div>
+                </div>
+                <div class="am-u-sm-3">
+                    <div class="category">
+                        <div class="category_img">
+                            <img src="img/category6.jpg">
+                        </div>
+                        <p>服饰</p>
+                    </div>
+                </div>
+                <div class="am-u-sm-3">
+                    <div class="category">
+                        <div class="category_img">
+                            <img src="img/category7.jpg">
+                        </div>
+                        <p>美容</p>
+                    </div>
+                </div>
+                <div class="am-u-sm-3">
+                    <div class="category">
+                        <div class="category_img">
+                            <img src="img/category8.jpg">
+                        </div>
+                        <p>保健</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="part">
+            <div class="part_name">
+                <img src="img/recommend.jpg">
+            </div>
+            <div class="am-g">
+                <div class="am-u-sm-6">
+                    <div class="border_right">
+                        <div class="recommend_img">
+                            <img src="img/recommend1.jpg">
+                        </div>
+                        <div class="introduce">
+                            <span>耐威克狗狗主粮</span>
+                            <p>萨摩耶狗粮幼犬10kg专用粮</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="am-u-sm-6">
+                    <div class="recommend border_bottom">
+                        <img src="img/recommend2.jpg">
+                    </div>
+                    <div class="recommend">
+                        <img src="img/recommend3.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="part">
+            <div class="am-g">
+                <div class="am-u-sm-6">
+                    <div class="border_right">
+                        <div class="recommend border_bottom">
+                            <img src="img/recommend2.jpg">
+                        </div>
+                        <div class="recommend">
+                            <img src="img/recommend3.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="am-u-sm-6">
+                    <div class="recommend_img">
+                        <img src="img/recommend4.jpg">
+                    </div>
+                    <div class="introduce">
+                        <span>耐威克狗狗主粮</span>
+                        <p>萨摩耶狗粮幼犬10kg专用粮</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="part">
+            <div class="part_name">
+                <img src="img/hot.jpg">
+            </div>
+            <table>
+                <tr>
+                    <td>
+                        <a href="#" class="link">
+                            <div class="hot_goods">
+                                <div class="hot_img">
+                                    <img src="img/hot_img.jpg">
+                                </div>
+                                <p class="price">￥162.00<span>￥162.00</span></p>
+                                <p>醇粹狗粮3kg泰迪贵宾专用天然粮小型犬成犬狗粮 美毛亮毛宠</p>
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#" class="link">
+                            <div class="hot_goods">
+                                <div class="hot_img">
+                                    <img src="img/hot_img.jpg">
+                                </div>
+                                <p class="price">￥162.00<span>￥162.00</span></p>
+                                <p>醇粹狗粮3kg泰迪贵宾专用天然粮小型犬成犬狗粮 美毛亮毛宠</p>
+                            </div>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#" class="link">
+                            <div class="hot_goods">
+                                <div class="hot_img">
+                                    <img src="img/hot_img.jpg">
+                                </div>
+                                <p class="price">￥162.00<span>￥162.00</span></p>
+                                <p>醇粹狗粮3kg泰迪贵宾专用天然粮小型犬成犬狗粮 美毛亮毛宠</p>
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#" class="link">
+                            <div class="hot_goods">
+                                <div class="hot_img">
+                                    <img src="img/hot_img.jpg">
+                                </div>
+                                <p class="price">￥162.00<span>￥162.00</span></p>
+                                <p>醇粹狗粮3kg泰迪贵宾专用天然粮小型犬成犬狗粮 美毛亮毛宠</p>
+                            </div>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#" class="link">
+                            <div class="hot_goods">
+                                <div class="hot_img">
+                                    <img src="img/hot_img.jpg">
+                                </div>
+                                <p class="price">￥162.00<span>￥162.00</span></p>
+                                <p>醇粹狗粮3kg泰迪贵宾专用天然粮小型犬成犬狗粮 美毛亮毛宠</p>
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#" class="link">
+                            <div class="hot_goods">
+                                <div class="hot_img">
+                                    <img src="img/hot_img.jpg">
+                                </div>
+                                <p class="price">￥162.00<span>￥162.00</span></p>
+                                <p>醇粹狗粮3kg泰迪贵宾专用天然粮小型犬成犬狗粮 美毛亮毛宠</p>
+                            </div>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#" class="link">
+                            <div class="hot_goods">
+                                <div class="hot_img">
+                                    <img src="img/hot_img.jpg">
+                                </div>
+                                <p class="price">￥162.00<span>￥162.00</span></p>
+                                <p>醇粹狗粮3kg泰迪贵宾专用天然粮小型犬成犬狗粮 美毛亮毛宠</p>
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#" class="link">
+                            <div class="hot_goods">
+                                <div class="hot_img">
+                                    <img src="img/hot_img.jpg">
+                                </div>
+                                <p class="price">￥162.00<span>￥162.00</span></p>
+                                <p>醇粹狗粮3kg泰迪贵宾专用天然粮小型犬成犬狗粮 美毛亮毛宠</p>
+                            </div>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="bottom_nav">
+            <table>
+                <td><a href="#" class="link">登录</a></td>
+                <td class="border"><a href="#" class="link">注册</a></td>
+                <td><a href="#head" class="link">返回顶部</a></td>
+            </table>
+        </div>
+        <div class="banben">
+            <div class="am-g">
+                <div class="am-u-sm-centered am-u-sm-5">
+                    <div class="am-g">
+                        <div class="am-u-sm-2">
+                            <img src="img/pc.png">
+                        </div>
+                        <div class="am-u-sm-4">
+                            <p>电脑版</p>
+                        </div>
+                        <div class="am-u-sm-2">
+                            <img src="img/wap.png">
+                        </div>
+                        <div class="am-u-sm-4">
+                            <p>手机版</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="lll">© 2016 风火宠物FH.com 版权所有</p>
+        <p class="lll"> 桂ICP备15009544号-1</p>
+    </div>
+    <div class="footer_nav">
+        <div class="am-g">
+            <div class="am-u-sm-3">
+                <img src="img/index_icon.jpg">
+                <p>首页</p>
+            </div>
+            <div class="am-u-sm-3">
+                <img src="img/order_icon.jpg">
+                <p>我的订单</p>
+            </div>
+            <div class="am-u-sm-3">
+                <img src="img/car_icon.jpg">
+                <p>购物车</p>
+            </div>
+            <div class="am-u-sm-3">
+                <img src="img/user_icon.jpg">
+                <p>个人中心</p>
+            </div>
+        </div>
+    </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>
